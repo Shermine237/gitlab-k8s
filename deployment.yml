@@ -16,16 +16,6 @@ spec:
         - name: gitlab-container
           image: gitlab/gitlab-ce:nightly
           env:
-            - name: DB_HOST
-              value: postgres.local
-            - name: DB_PORT
-              value: "30007"
-            - name: DB_NAME
-              value: gitlab-db
-            - name: DB_USER
-              value: gitlab
-            - name: DB_PASSWORD
-              value: gitlab
             - name: GITLAB_ROOT_PASSWORD
               value: password
             - name: GITLAB_ROOT_EMAIL
