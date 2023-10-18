@@ -7,7 +7,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 2Gi
+      storage: 15Gi
   storageClassName: gitlab-storage-class
   volumeName: pv-gitlab
   selector:

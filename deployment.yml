@@ -21,7 +21,7 @@ spec:
             - name: GITLAB_ROOT_PASSWORD
               value: M@vou@sample-password
           volumeMounts:
-            - mountPath: /etc/gitlab
+            - mountPath: /var/opt/gitlab
               name: config
       volumes:
         - name: config

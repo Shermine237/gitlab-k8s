@@ -6,14 +6,14 @@ metadata:
     type: local
 spec:
   capacity:
-    storage: 2Gi
+    storage: 15Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   storageClassName: gitlab-storage-class
   local:
-    path: /run/desktop/mnt/host/c/Users/path
+    path: /home/shermine237/gitlab-k8s/config
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -21,4 +21,4 @@ spec:
           - key: kubernetes.io/hostname
             operator: In
             values:
-              - docker-desktop
+              - desktop-0n2dksr
