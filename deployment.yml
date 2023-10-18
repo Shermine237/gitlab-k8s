@@ -16,10 +16,10 @@ spec:
         - name: gitlab-container
           image: gitlab/gitlab-ce:nightly
           env:
-            - name: GITLAB_ROOT_PASSWORD
-              value: password
             - name: GITLAB_ROOT_EMAIL
-              value: email@sample.com
+              value: mavou-devops@sample.com
+            - name: GITLAB_ROOT_PASSWORD
+              value: M@vou@sample-password
           volumeMounts:
             - mountPath: /etc/gitlab
               name: config
