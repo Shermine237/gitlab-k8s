@@ -5,8 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: gitlab.local
-    http:
+  - http:
       paths:
       - path: /
         pathType: Prefix
