@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: gitlab-container
-          image: gitlab/gitlab-ce:16.2.8-ce.0
+          image: gitlab/gitlab-ce:nightly
           env:
             - name: DB_HOST
               value: postgres.local
