@@ -3,5 +3,5 @@ kind: StorageClass
 metadata:
   name: gitlab-storage-class
 reclaimPolicy: Retain
-provisioner: docker.io/hostpath
+provisioner: microk8s.io/hostpath
 volumeBindingMode: WaitForFirstConsumer
