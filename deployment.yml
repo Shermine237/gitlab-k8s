@@ -19,7 +19,7 @@ spec:
             - name: GITLAB_ROOT_EMAIL
               value: mavou-devops@sample.com
             - name: GITLAB_ROOT_PASSWORD
-              value: M@vou@sample-password
+              value: M@vou@sjkhjg#
           volumeMounts:
             - mountPath: /var/opt/gitlab
               name: config
