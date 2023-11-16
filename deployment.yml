@@ -23,7 +23,12 @@ spec:
           volumeMounts:
             - mountPath: /var/opt/gitlab
               name: config
+            - mountPath: /etc/gitlab
+              name: conf
       volumes:
         - name: config
           persistentVolumeClaim:
             claimName: pvc-gitlab
+        - name: conf
+          persistentVolumeClaim:
+            claimName: pvc-gitlab-conf
